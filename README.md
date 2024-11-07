@@ -117,3 +117,9 @@ Get latest quota information of the account.
     }
 }
 ```
+
+#### Sample Usage
+```curl
+curl --location 'https://api.arborchat.ai/stockchat/api/v1/quota' \
+--header 'x-api-key: <API_KEY>' \
+```
