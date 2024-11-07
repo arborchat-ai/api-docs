@@ -33,15 +33,15 @@ Perform analysis and answer investment-related questions.
         "answer": string, // in markdown format
         "references": [{
             "title": string,
-            "url": string,
+            "url": string
         }],
         "subqueries": [{
-        		"query" string,
-        		"answer": string,
-        		"references": [{
-        			"title": string,
-        			"url": string
-        		}]
+            "query" string,
+            "answer": string,
+            "references": [{
+                "title": string,
+                "url": string
+            }]
         }]
     }
 }
