@@ -13,7 +13,7 @@ Perform analysis and answer investment-related questions.
 
 ***POST [https://api.arborchat.ai/stockchat/api/v1/answer](https://api.arborchat.ai/stockchat/api/v1/answer)***
 
-*Note: Max 5 requests per minute.*
+*Note: Max 5 requests per minute. In some complex questions that lead to multi-level analysis, we might take more than 60s to return an answer. We suggest to allow a timeout of 90s or above.* 
 
 #### Request Body
 ```
