@@ -19,7 +19,9 @@ Perform analysis and answer investment-related questions.
 ```
 {
     "query": string,
-    "forceAnswer": boolean    # Determines whether ArborChat should respond to non-investment related questions, even though it's not its primary focus. Default is false.
+    "forceAnswer": boolean    # Determines whether ArborChat should respond to
+                              # non-investment related questions, even though 
+                              # it's not its primary focus. Default is false.
 }
 ```
 
