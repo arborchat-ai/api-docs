@@ -11,7 +11,7 @@ Authentication is required via passing an API Key passed in the `x-api-key` head
 
 Perform analysis and answer investment-related questions.
 
-***POST [https://api.arborchat.ai/api/v1/answer](https://api.arborchat.ai/api/v1/answer)***
+***POST [https://api.arborchat.ai/v1/answer](https://api.arborchat.ai/v1/answer)***
 
 *Note: Max 5 requests per minute. In some complex questions that lead to multi-level analysis, we might take more than 60s to return an answer. We suggest to allow a timeout of 120s or above.* 
 
@@ -53,7 +53,7 @@ Perform analysis and answer investment-related questions.
 #### Sample Usage
 *cURL*
 ```curl
-curl --location 'https://api.arborchat.ai/api/v1/answer' \
+curl --location 'https://api.arborchat.ai/v1/answer' \
 --header 'x-api-key: <API_KEY>' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -65,7 +65,7 @@ curl --location 'https://api.arborchat.ai/api/v1/answer' \
 ```python
 import requests
 import json
-response = requests.request("POST", "https://api.arborchat.ai/api/v1/answer", headers={
+response = requests.request("POST", "https://api.arborchat.ai/v1/answer", headers={
   'x-api-key: '<API_KEY>',
   'Content-Type': 'application/json'
 }, data=json.dumps({
@@ -78,7 +78,7 @@ response = requests.request("POST", "https://api.arborchat.ai/api/v1/answer", he
 const axios = require('axios');
 await axios.request({
   method: 'POST',
-  url: 'https://api.arborchat.ai/api/v1/answer',
+  url: 'https://api.arborchat.ai/v1/answer',
   headers: { 
     'x-api-key: '<API_KEY>', 
     'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ await axios.request({
 
 Get latest quota information of the account.
 
-***GET [https://api.arborchat.ai/api/v1/quota](https://api.arborchat.ai/api/v1/quota)***
+***GET [https://api.arborchat.ai/v1/quota](https://api.arborchat.ai/v1/quota)***
 
 #### Response Format
 ```
@@ -123,6 +123,6 @@ Get latest quota information of the account.
 
 #### Sample Usage
 ```curl
-curl --location 'https://api.arborchat.ai/api/v1/quota' \
+curl --location 'https://api.arborchat.ai/v1/quota' \
 --header 'x-api-key: <API_KEY>' \
 ```
