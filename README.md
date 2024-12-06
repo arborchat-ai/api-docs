@@ -19,7 +19,7 @@ Perform analysis and answer investment-related questions.
 ```
 {
     "query": string,
-    "forceAnswer": boolean # Determines whether ArborChat should respond to non-investment related questions, even though it's not its primary focus. Default is false.
+    "forceAnswer": boolean    # Determines whether ArborChat should respond to non-investment related questions, even though it's not its primary focus. Default is false.
 }
 ```
 
@@ -27,11 +27,11 @@ Perform analysis and answer investment-related questions.
 ```
 {
     "success": boolean,
-    "error": string | null, # see "Possible Errors" section
+    "error": string | null,    # see "Possible Errors" section
     "result": {
         "id": string,
         "query": string,
-        "answer": string,   # in markdown format
+        "answer": string,      # in markdown format
         "references": [{
             "title": string,
             "url": string
