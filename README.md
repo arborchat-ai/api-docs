@@ -13,12 +13,13 @@ Perform analysis and answer investment-related questions.
 
 ***POST [https://api.arborchat.ai/api/v1/answer](https://api.arborchat.ai/api/v1/answer)***
 
-*Note: Max 5 requests per minute. In some complex questions that lead to multi-level analysis, we might take more than 60s to return an answer. We suggest to allow a timeout of 90s or above.* 
+*Note: Max 5 requests per minute. In some complex questions that lead to multi-level analysis, we might take more than 60s to return an answer. We suggest to allow a timeout of 120s or above.* 
 
 #### Request Body
 ```
 {
-    "query": string
+    "query": string,
+    "forceAnswer": boolean // Determines whether ArborChat should respond to non-investment related questions, even though it's not its primary focus. Default is false.
 }
 ```
 
@@ -100,7 +101,7 @@ await axios.request({
 
 Get latest quota information of the account.
 
-***GET [https://api.arborchat.ai/api/v1/answer](https://api.arborchat.ai/api/v1/quota)***
+***GET [https://api.arborchat.ai/api/v1/quota](https://api.arborchat.ai/api/v1/quota)***
 
 #### Response Format
 ```
